@@ -186,16 +186,16 @@ We tested the protocl above by shotgun sequencing two white clover (_Trifolium r
 
 ## References
 
-Kobs, G. 1997. Cloning Blunt-End DNA Fragments Into the pGEM ® -T Vector Systems. _Promega Notes Magazine_ 16:
-&nbsp;&nbsp;&nbsp;&nbsp;15-20. [LINK](https://pdfs.semanticscholar.org/b329/1e0dfa33117dba17d08149dd44a62b00e2a5.pdf)
-Fisher, S. _et al._ 2011. A scalable, fully automated process for construction of sequence-ready human exome
-&nbsp;&nbsp;&nbsp;&nbsp;targeted capture libraries. _Genome Biology_ 12: 1-15. [LINK](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2011-12-1-r1)
-Glenn, Travis C. _et al._ 2016. Adapterama I: Universal stubs and primers for thousands of dual-indexed
-&nbsp;&nbsp;&nbsp;&nbsp;Illumina libraries (iTru & iNext) 3. _bioRxiv_. [LINK](https://www.biorxiv.org/content/10.1101/049114v1)
-Meyer, L., and Kircher, M. 2010. Illumina Sequencing Library Preparation for Highly Multiplexed Target
-&nbsp;&nbsp;&nbsp;&nbsp;Capture and Sequencing. _Cold Spring Harbor Protocols_ 2010(6). [LINK](http://cshprotocols.cshlp.org/content/2010/6/pdb.prot5448.long)
-Rohland, N., and Reich, D. Cost-effective, high-throughput DNA sequencing libraries for multiplexed target
-&nbsp;&nbsp;&nbsp;&nbsp;capture. _Genome Research_ 22: 939-946. [LINK](http://genome.cshlp.org/cgi/pmidlookup?view=long&pmid=22267522)
+1. Kobs, G. 1997. Cloning Blunt-End DNA Fragments Into the pGEM ® -T Vector Systems. _Promega Notes Magazine_ 16:
+15-20. [LINK](https://pdfs.semanticscholar.org/b329/1e0dfa33117dba17d08149dd44a62b00e2a5.pdf)
+2. Fisher, S. _et al._ 2011. A scalable, fully automated process for construction of sequence-ready human exome
+targeted capture libraries. _Genome Biology_ 12: 1-15. [LINK](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2011-12-1-r1)
+3. Glenn, Travis C. _et al._ 2016. Adapterama I: Universal stubs and primers for thousands of dual-indexed
+Illumina libraries (iTru & iNext) 3. _bioRxiv_. [LINK](https://www.biorxiv.org/content/10.1101/049114v1)
+4. Meyer, L., and Kircher, M. 2010. Illumina Sequencing Library Preparation for Highly Multiplexed Target
+Capture and Sequencing. _Cold Spring Harbor Protocols_ 2010(6). [LINK](http://cshprotocols.cshlp.org/content/2010/6/pdb.prot5448.long)
+5. Rohland, N., and Reich, D. Cost-effective, high-throughput DNA sequencing libraries for multiplexed target
+capture. _Genome Research_ 22: 939-946. [LINK](http://genome.cshlp.org/cgi/pmidlookup?view=long&pmid=22267522)
 
 
 
