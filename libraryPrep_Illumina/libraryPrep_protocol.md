@@ -151,7 +151,7 @@ This protocol assumes that you have:
 
 1. Prepare the PCR master mix shown in table 5. Prepare 12.5 &#956;L &#215; 1.2 &#215; # samples (plus controls)of master mix. Each reaction requires 10 &#956;L.
 
-    **Table 4:** (PCR master mix)[https://international.neb.com/Protocols/0001/01/01/pcr-protocol-m0530]. All volumes in &#956;L
+    **Table 4:** [PCR master mix](https://international.neb.com/Protocols/0001/01/01/pcr-protocol-m0530). All volumes in &#956;L
 
     | Reagent            | Units | Initial conc.| Vol.     | Final conc. |
     |--------------------|-------|--------------|----------|-------------|
