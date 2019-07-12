@@ -103,7 +103,7 @@ This protocol assumes that you have:
 
 1. Prepare the A-tailing master mix shown in table 3. Prepare 10 &#956;L &#215; 1.2 &#215; # samples of master mix. Each reaction requires 10 &#956;L.
 
-    **Table 3:** See Kobbs (1997) and [this wiki from the Rausher lab at Duke](https://wiki.duke.edu/display/rausherlab/A-tailing+of+PCR+products)for details on A-tailing. All volumes in &#956;L
+    **Table 3:** See Kobbs (1997) and [this wiki from the Rausher lab at Duke](https://wiki.duke.edu/display/rausherlab/A-tailing+of+PCR+products) for details on A-tailing. All volumes in &#956;L
 
     | Reagent    | Units | Initial conc. | Vol.  | Final conc. |
     |------------|-------|---------------|-------|-------------|
