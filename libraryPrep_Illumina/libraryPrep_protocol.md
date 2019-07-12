@@ -48,7 +48,7 @@ v1.0.0 (July 10, 2019)
 
 This protocol is used for preparing dual-indexed, Illumina-compatible gDNA libraries for whole genome sequencing. It doesn't rely on any commercial kits; rather, the protocol uses home-made master mixes for all reactions to minimize costs. Master mixes were retrieved from published sources and occasionally subject to minor changes (these will be indicated). References will be provided throughout to credit the original publications.
 
-Briefly, this protocol uses an "on-bead" library preparation (Fisher _et al._ 2011) with "home-brewed" master mixes (Kobbs 1997; Meyer and Kircher 2010; Fisher _et al._ 2011) and SPRI beads (Rohland and Reich 2012), and incorporates i5 and i7 Ilummina indices into adapters through PCR (Glenn _et al._ 2016).
+Briefly, this protocol uses an "on-bead" library preparation (Fisher _et al._ 2011) with "home-brewed" master mixes (Kobs 1997; Meyer and Kircher 2010; Fisher _et al._ 2011) and SPRI beads (Rohland and Reich 2012), and incorporates i5 and i7 Ilummina indices into adapters through PCR (Glenn _et al._ 2016).
 
 This protocol assumes that you have:
 1. Hydrated all of index-containing forward and reverse PCR primers (described in supplementary file S6 in Glenn _et al._ 2016). These are diluted to 5 &#956;M.
@@ -103,7 +103,7 @@ This protocol assumes that you have:
 
 1. Prepare the A-tailing master mix shown in table 3. Prepare 10 &#956;L &#215; 1.2 &#215; # samples of master mix. Each reaction requires 10 &#956;L.
 
-    **Table 3:** See Kobbs (1997) and [this wiki from the Rausher lab at Duke](https://wiki.duke.edu/display/rausherlab/A-tailing+of+PCR+products) for details on A-tailing. All volumes in &#956;L
+    **Table 3:** See Kobs (1997) and [this wiki from the Rausher lab at Duke](https://wiki.duke.edu/display/rausherlab/A-tailing+of+PCR+products) for details on A-tailing. All volumes in &#956;L
 
     | Reagent    | Units | Initial conc. | Vol.  | Final conc. |
     |------------|-------|---------------|-------|-------------|
@@ -183,6 +183,19 @@ This protocol assumes that you have:
 ## Testing the libraries
 
 We tested the protocl above by shotgun sequencing two white clover (_Trifolium repens_) genomes to 35X coverage on a lane of HiSeq 4000. [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) reports for both sequencing libraries are available [HERE](./fastqc_reports/). While the reports show some warnings, these can be larger explained by the adapter trimming performed using [bbduk](https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbduk-guide/). The adapter contamination occured because we sheared DNA to a mean size of 300 bp, resulting adapter read-though of some smaller fragments during sequencing. We now recommend shaering to 500bp to minimize this. Nonetheless, few reads were lost and all remaining reads were high quality.
+
+## References
+
+Kobs, G. 1997. Cloning Blunt-End DNA Fragments Into the pGEM ® -T Vector Systems. _Promega Notes Magazine_ 16:
+&nbsp;&nbsp;&nbsp;&nbsp;15-20. [LINK](https://pdfs.semanticscholar.org/b329/1e0dfa33117dba17d08149dd44a62b00e2a5.pdf)
+Fisher, S. _et al._ 2011. A scalable, fully automated process for construction of sequence-ready human exome
+&nbsp;&nbsp;&nbsp;&nbsp;targeted capture libraries. _Genome Biology_ 12: 1-15. [LINK](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2011-12-1-r1)
+Glenn, Travis C. _et al._ 2016. Adapterama I: Universal stubs and primers for thousands of dual-indexed
+&nbsp;&nbsp;&nbsp;&nbsp;Illumina libraries (iTru & iNext) 3. _bioRxiv_. [LINK](https://www.biorxiv.org/content/10.1101/049114v1)
+Meyer, L., and Kircher, M. 2010. Illumina Sequencing Library Preparation for Highly Multiplexed Target
+&nbsp;&nbsp;&nbsp;&nbsp;Capture and Sequencing. _Cold Spring Harbor Protocols_ 2010(6). [LINK](http://cshprotocols.cshlp.org/content/2010/6/pdb.prot5448.long)
+Rohland, N., and Reich, D. Cost-effective, high-throughput DNA sequencing libraries for multiplexed target
+&nbsp;&nbsp;&nbsp;&nbsp;capture. _Genome Research_ 22: 939-946. [LINK](http://genome.cshlp.org/cgi/pmidlookup?view=long&pmid=22267522)
 
 
 
