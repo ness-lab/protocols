@@ -46,11 +46,12 @@ v1.0.0 (July 10, 2019)
 
 ### Before starting
 
-This protocol is used for preparing dual-indexed, Illumina-compatible gDNA libraries for whole genome sequencing. It doesn't rely on any commercial kits; rather, the protocol uses home-made master mixes for all reactions to minimize costs. Master mixes were retrieved from published sources and occasionally subject to minor changes (these will be indicated). References will be provided throughout to credit the original publications.
+This protocol is used for preparing dual-indexed, Illumina-compatible gDNA libraries for whole genome sequencing. It doesn't rely on any commercial kits; rather, the protocol uses home-made master mixes for all reactions to minimize costs. References will be provided throughout to credit the original publications.
 
 Briefly, this protocol uses an "on-bead" library preparation (Fisher _et al._ 2011) with "home-brewed" master mixes (Kobs 1997; Meyer and Kircher 2010; Fisher _et al._ 2011) and SPRI beads (Rohland and Reich 2012), and incorporates i5 and i7 Ilummina indices into adapters through PCR (Glenn _et al._ 2016).
 
 This protocol assumes that you have:
+
 1. Hydrated all of index-containing forward and reverse PCR primers (described in supplementary file S6 in Glenn _et al._ 2016). These are diluted to 5 &#956;M.
 2. Annealed the adapter stubs to form the Y-yoke adapter (Supplementary S7 in Glenn _et al._ 2016). These are diluted to 5 &#956;M. This is referred to as the _adaptor mix_ throughout the protocol_
 3. Prepared the SPRI bead solution, which replaces Ampure XP beads for cleaning enzymatic reations (Rohland and Reich 2010; reproduced in supplementary file S8 in Glenn _et al._ 2016). Be sure to also prepare a PEG solution lacking the actual SPRI beads (file S8 in Glenn _et al._ 2016), which will be used throughout the protocol.
@@ -81,13 +82,13 @@ This protocol assumes that you have:
     | Water        | NA    | NA            | 0.2  | NA          |
     | **Total**    | NA    | NA            | NA   | **10**      |
 
-2. Pipette 10 &#956;L of master mix in to 25 &#956;L of each DNA sample. Pipette mix thoroughly by pipetting up and down 10 to 15 times.
+2. Pipette 10 &#956;L of master mix in to 25 &#956;L of each DNA sample. Mix throughly by pipetting or flicking.
 3. Incubate reation in thermocycler using the following conditions (from Fisher _et al._ 2011):
     * 15 mins at 12°C followed by 15 mins at 25°C (30 mins total).
 
 ### Step 3: Post end-repair cleanup
 
-1. Add 100 &#956;L of SPRI bead solution to each sample. This is a 2.8X Bead:DNA ratio, which keeps dsDNA fragments but removes leftovers from end-repair master mix. Pipette mix thoroughly.
+1. Add 100 &#956;L of SPRI bead solution to each sample. This is a 2.8X Bead:DNA ratio, which keeps dsDNA fragments but removes leftovers from end-repair master mix. Mix throughly by pipetting or flicking.
 2. Incubate at room temperature for 5 to 15 minutes.
 3. Place samples on magnetic rack and allow the beads to bind to the side of the tube. The supernatant should be clear.
 4. Remove and discard the supernatant (the DNA is bound to the beads so won't be lost).
@@ -95,7 +96,7 @@ This protocol assumes that you have:
 6. Perform another ethanol wash as in step 5.
 7. Remove any residual ethanol with a pipette tip. Let samples sit uncovered at room temperature for 2 to 10 minutes or until all ethanol has evaporated.
     * **Important:** Do not let beads dry out too much as this will reduce yield. Beads should be matte brown (not glossy). Dry beads with begin to crack.
-8. Elute DNA in 20 &#956;L TE (or dH<sup>2</sup>0). Pipette mix vigorously to homogenize beads and TE. The DNA will now be in solution.
+8. Elute DNA in 20 &#956;L TE (or dH<sup>2</sup>0). Pipette mix to homogenize beads and TE. The DNA will now be in solution.
 
 **Note:** The beads from the above reaction will be kept through all subsequent enzymatic reactions and reused for all SPRI bead cleanups (except PCR). The beads do not interfere with the reactions (Fisher _et al._ 2011).
 
@@ -151,7 +152,7 @@ This protocol assumes that you have:
 
 1. Prepare the PCR master mix shown in table 5. Prepare 12.5 &#956;L &#215; 1.2 &#215; # samples (plus controls)of master mix. Each reaction requires 10 &#956;L.
 
-    **Table 4:** [PCR master mix](https://international.neb.com/Protocols/0001/01/01/pcr-protocol-m0530). All volumes in &#956;L
+    **Table 5:** [PCR master mix](https://international.neb.com/Protocols/0001/01/01/pcr-protocol-m0530). All volumes in &#956;L
 
     | Reagent            | Units | Initial conc.| Vol.     | Final conc. |
     |--------------------|-------|--------------|----------|-------------|
@@ -165,7 +166,7 @@ This protocol assumes that you have:
 3. Add 10 &#956;L of DNA sample to each well containing PCR master mix.
 4. Add 1.25 &#956;L of forward primer and 1.25 &#956;L of reverse primer to each sample.
     * _Note:_ Each sample should receive a unique combination of forward and reverse primers since these will incorporate the indices into the libraries. 8 forward + 12 reverse primers can uniquely tag 96 individuals.
-5. Perform PCR using the following conditions.
+5. Perform PCR using the following conditions. See Glenn _et al._ (2016) for details on these primers.
     * 98 &#176;C for 30 seconds
     * 8 to 14 cycles of:
         * 98 &#176;C for 30 seconds
@@ -182,7 +183,7 @@ This protocol assumes that you have:
 
 ## Testing the libraries
 
-We tested the protocl above by shotgun sequencing two white clover (_Trifolium repens_) genomes to 35X coverage on a lane of HiSeq 4000. [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) reports for both sequencing libraries are available [HERE](./fastqc_reports/). While the reports show some warnings, these can be larger explained by the adapter trimming performed using [bbduk](https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbduk-guide/). The adapter contamination occured because we sheared DNA to a mean size of 300 bp, resulting adapter read-though of some smaller fragments during sequencing. We now recommend shaering to 500bp to minimize this. Nonetheless, few reads were lost and all remaining reads were high quality.
+We tested the protocol above by shotgun sequencing two white clover (_Trifolium repens_) genomes to 35X coverage on a lane of HiSeq 4000. [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) reports for both sequencing libraries are available [HERE](./fastqc_reports/). While the reports show some warnings, these can be larger explained by the adapter trimming performed using [bbduk](https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbduk-guide/). The adapter contamination occured because we sheared DNA to a mean size of 300 bp, resulting adapter read-though of some smaller fragments during sequencing. We now recommend shaering to 500bp to minimize this. Nonetheless, few reads were lost and all remaining reads were high quality.
 
 ## References
 
