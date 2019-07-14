@@ -53,7 +53,7 @@ Briefly, this protocol uses an "on-bead" library preparation (Fisher _et al._ 20
 This protocol assumes that you have:
 
 1. Hydrated all of index-containing forward and reverse PCR primers (described in supplementary file S6 in Glenn _et al._ 2016). These are diluted to 5 &#956;M.
-2. Annealed the adapter stubs to form the Y-yoke adapter (Supplementary S7 in Glenn _et al._ 2016). These are diluted to 5 &#956;M. This is referred to as the _adaptor mix_ throughout the protocol_
+2. Annealed the adapter stubs (i.e., iTrusR2-stubRCp, iTrusR1-stub) to form the Y-yoke adapter (Supplementary S7 in Glenn _et al._ 2016). These are diluted to 5 &#956;M. This is referred to as the _adaptor mix_ throughout the protocol_
 3. Prepared the SPRI bead solution, which replaces Ampure XP beads for cleaning enzymatic reations (Rohland and Reich 2010; reproduced in supplementary file S8 in Glenn _et al._ 2016). Be sure to also prepare a PEG solution lacking the actual SPRI beads (file S8 in Glenn _et al._ 2016), which will be used throughout the protocol.
 4. Prepared a fresh aliquot of 80% ethanol.
 
