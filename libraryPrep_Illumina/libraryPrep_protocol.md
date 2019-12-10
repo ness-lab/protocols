@@ -61,8 +61,8 @@ This protocol assumes that you have:
 
 ### Step 1: DNA shearing
 
-1. Normalize DNA to 40 ng/&#956;L (quantified on Nanodrop).
-    * _Note:_ 20 ng/&#956;L would probably be fine.
+1. Normalize DNA to 10 ng/&#956;L (quantified on Qubit).
+    * _Note:_ Lower concentration would probably be fine.
 2. Shear DNA by sonication to mean fragment size of \~500 bp.
     * _Note:_ We initially sonicated to 300 bp usng a Bioruptor Pico following the manufacturer's protocol. However, this resulted in adaptor contamination in some of the reads, which had to be trimmed. We have not yet figured out the protocol to shear to 500 bp on a Bioruptor Pico since Diagenode doesn't provide this.
 
@@ -129,14 +129,13 @@ This protocol assumes that you have:
 
     **Table 4:** Adapter ligation master mix from Meyer and Kircher (2010). All volumes in &#956;L
 
-    | Reagent    | Units | Initial conc. | Vol.  | Final conc. |
-    |------------|-------|---------------|-------|-------------|
-    | Taq buffer | X     | 10            | 3     | 1           |
-    | dATP       | mM    | 10            | 0.6   | 0.2         |
-    | Taq        | U     | 5             | 3     | 0.5         |
-    | MgCl2      | mM    | 50            | 1.5   | 2.5         |
-    | Water      | NA    | NA            | 1.9   | NA          |
-    | **Total**  | NA    | NA            | **10**| NA          |
+    | Reagent       | Units | Initial conc. | Vol.  | Final conc. |
+    |---------------|-------|---------------|-------|-------------|
+    | Ligase buffer | X     | 10            | 3.5   | 1           |
+    | PEG-4000      | mM    | 50            | 3.5   | 5           |
+    | T4 Ligase     | U     | 5             | 0.88  | 0.125       |
+    | Water         | NA    | NA            | 2.12  | NA          |
+    | **Total**     | NA    | NA            | **10**| NA          |
 
 2. Add 5 &#956;L of 5 &#956;M adapter mix (see Before starting above) to each DNA sample.
 3. Add 10 &#956;L of master mix to each sample. Pipette mix thoroughly. The total volume should now be 35 &#956;L.
