@@ -1,8 +1,23 @@
-# Dual-indexed library preparation of gDNA for Illumina sequencing
+---
+title: Dual-indexed library preparation of gDNA for Illumina sequencing
+author: James S. Santangelo
+date: __Last updated\:__ \today
+bibliography: references.bib
+toc: true
+toc-title: Table of contents
+---
 
-#### Author: James S. Santangelo
+## Version history
 
-v1.0.0 (July 10, 2019)
+#### v1.1.0 (Latest)
+
+- Added YAML header to generate table of contents, title, author, and last updated
+
+#### v1.0.0 (July 10, 2019)
+
+- Initial commit of protocol
+
+\pagebreak
 
 ## Setting up
 
@@ -48,7 +63,7 @@ v1.0.0 (July 10, 2019)
 
 This protocol is used for preparing dual-indexed, Illumina-compatible gDNA libraries for whole genome sequencing. It doesn't rely on any commercial kits; rather, the protocol uses home-made master mixes for all reactions to minimize costs. References will be provided throughout to credit the original publications.
 
-Briefly, this protocol uses an "on-bead" library preparation (Fisher _et al._ 2011) with "home-brewed" master mixes (Kobs 1997; Meyer and Kircher 2010; Fisher _et al._ 2011) and SPRI beads (Rohland and Reich 2012), and incorporates i5 and i7 Ilummina indices into adapters through PCR (Glenn _et al._ 2016).
+Briefly, this protocol uses an "on-bead" library preparation (@Fisher2011) with "home-brewed" master mixes (@Kobs1997; @Meyer2010; @Fisher2011) and SPRI beads (@Rohland2012), and incorporates i5 and i7 Ilummina indices into adapters through PCR (@Glenn2019).
 
 This protocol assumes that you have:
 
@@ -186,16 +201,7 @@ We tested the protocol above by shotgun sequencing two white clover (_Trifolium 
 
 ## References
 
-1. Kobs, G. 1997. Cloning Blunt-End DNA Fragments Into the pGEM ® -T Vector Systems. _Promega Notes Magazine_ 16:
-15-20. [LINK](https://pdfs.semanticscholar.org/b329/1e0dfa33117dba17d08149dd44a62b00e2a5.pdf)
-2. Fisher, S. _et al._ 2011. A scalable, fully automated process for construction of sequence-ready human exome
-targeted capture libraries. _Genome Biology_ 12: 1-15. [LINK](https://genomebiology.biomedcentral.com/articles/10.1186/gb-2011-12-1-r1)
-3. Glenn, Travis C. _et al._ 2016. Adapterama I: Universal stubs and primers for thousands of dual-indexed
-Illumina libraries (iTru & iNext) 3. _bioRxiv_. [LINK](https://www.biorxiv.org/content/10.1101/049114v1)
-4. Meyer, L., and Kircher, M. 2010. Illumina Sequencing Library Preparation for Highly Multiplexed Target
-Capture and Sequencing. _Cold Spring Harbor Protocols_ 2010(6). [LINK](http://cshprotocols.cshlp.org/content/2010/6/pdb.prot5448.long)
-5. Rohland, N., and Reich, D. Cost-effective, high-throughput DNA sequencing libraries for multiplexed target
-capture. _Genome Research_ 22: 939-946. [LINK](http://genome.cshlp.org/cgi/pmidlookup?view=long&pmid=22267522)
+
 
 
 
