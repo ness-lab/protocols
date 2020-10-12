@@ -11,7 +11,13 @@ linkcolor: blue
 
 # Version history
 
-#### v1.1.0 (Latest)
+#### v1.1.1 (Latest)
+
+- Minor typo fixes
+- Added details on performin 2nd PCR raction to increase concentrations
+- Added details on pooling into equimolar pools for sequencing
+
+#### v1.1.0
 
 - Added colored links
 - Minor typo and syntax changes
@@ -212,17 +218,26 @@ This protocol assumes that you have:
         * 72 &#176;C for 60 seconds
     * 72 &#176;C for 1 minute
 
-### Post PCR cleanup
+### 2nd indexing PCR and pooling (optional)
 
-1. Add 20 &#956;L of 20% PEG/2.5 mM NaCl (i.e. speedbeads without the beads) to samples. This is a 0.8X bead:DNA ratio which should primer dimers and other small fragments remaining from PCR.
-2. Perform bead cleanup as in [@sec:3.1.2], eluting DNA in 20 &#956;L of low-TE.
+Because only 10 &#956;L of the pre-PCR (i.e., ligated) library is used in the indexing PCR, each library prep allows for a total of two PCR reactions. If you find that final library concentrations (i.e., after cleaning, see [@sec:3.5.3]) are too low, you can perform a second PCR reaction on the remain pre-PCR library using the same conditions as above. These two reaction can then be pooled prior to cleaning, and then eluted in a lower volume to increase concentrations (see [@sec:3.5.3] below).
+
+### Post PCR cleanup {#sec:3.5.3}
+
+1. Add 0.8X the post-PCR DNA volume in SPRI bead solution to each sampled. If you only performed a single PCR reaction, this should be approximately 20 &#956;L. If you pooled two 25 &#956;L PCR reactions, this should be approximately 40 &#956;L of SPRI bead solution. This should remvove primer dimers and other small fragments remaining from PCR.
+2. Perform bead cleanup as in [@sec:3.1.2], eluting in 23 &#956;L (i.e., 20 &#956;L for sequencing and 3 &#956;L for post-cleaning QC)
 3. QC library by visualizing on a gel using the 50 bp Fermentas ladder or by passing through an Agilent Bioanalyzer with a DNA 1000 high sensitivity chip.
 
-**Note:** Quantify samples by Qubit. If concentrations are too low, consider performing another PCR as above, pooling the post-PCR reactions, bead-cleaning with 2.8X bead:DNA ration, and eluting in a lower volume. If pooling, [this script](https://github.com/ness-lab/illumina-pooling) can facilitate determining the library volumes required to create equimolar pools for sequencing
+## Pooling for sequencing
+
+For multiplexed sequencing, dual-indexed libraries need to be pooled into equimolar ratio pools to ensure approximately equal sequencing coverage. [
+
+1. [This script](https://github.com/ness-lab/illumina-pooling) can facilitate determining the library volumes required to create equimolar pools for sequencing.
+2. Pipette the required volume of each cleaned, dual-indexed library into the appropriate tube. You should have 1 tube for each sequencing lane.
 
 ## Testing the libraries
 
-We tested the protocol above by shotgun sequencing two white clover (_Trifolium repens_) genomes to 35X coverage on a lane of HiSeq 4000. [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) reports for both sequencing libraries are available [HERE](./fastqc_reports/). While the reports show some warnings, these can be larger explained by the adapter trimming performed using [bbduk](https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbduk-guide/). The adapter contamination occured because we sheared DNA to a mean size of 300 bp, resulting adapter read-though of some smaller fragments during sequencing. We now recommend shaering to 500bp to minimize this. Nonetheless, few reads were lost and all remaining reads were high quality.
+We tested the protocol above by shotgun sequencing two white clover (_Trifolium repens_) genomes to 35X coverage on a lane of HiSeq 4000. [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) reports for both sequencing libraries are available [HERE](./fastqc_reports/). While the reports show some warnings, these can be largely eliminated by the adapter trimming performed using [bbduk](https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbduk-guide/). The adapter contamination occured because we sheared DNA to a mean size of 300 bp, resulting adapter read-though of some smaller fragments during sequencing. We now recommend shaering to 500bp to minimize this. Nonetheless, few reads were lost and all remaining reads were high quality.
 
 # References
 
