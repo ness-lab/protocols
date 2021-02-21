@@ -11,7 +11,16 @@ linkcolor: blue
 
 # Version history
 
-#### v1.1.1 (Latest)
+#### v1.2.0 (Latest)
+
+- Added consumables to supplies and updated costs
+- Updated DNA shearing conditions and added transfer step post-cleanup
+- Updated Taq concentration for A-tailing
+- Clarified creation of equimolar dilutions and final library pool
+- Added QC steps for final library
+- Minor clarifications and typo fixes
+
+#### v1.1.1
 
 - Minor typo fixes
 - Added details on performin 2nd PCR raction to increase concentrations
