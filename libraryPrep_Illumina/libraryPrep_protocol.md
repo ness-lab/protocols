@@ -194,7 +194,7 @@ This protocol assumes that you have:
 
 1. Add 31.5 &#956;L of 20% PEG/2.5 mM NaCl (i.e. speedbeads without the beads) to samples. This is a 0.9X bead:DNA ratio. This will get rid of smaller DNA fragments (e.g., < \~250 bp) like adapter dimers that may have formed during the ligation reaction.
 2. Perform bead cleanup as in [@sec:3.1.2], eluting DNA in 20 &#956;L of low-TE.
-3. After elution, place beads on magnet and transfer supernatant to new tube/plate. The DNA is in the supernatant. This will be used for indexing PCR.
+3. After elution, place beads on magnet and carefully transfer the supernatant to new tube/plate by slowly drawing up the supernatant with a pipette. The DNA is in the supernatant. This will be used for indexing PCR.
 
 ## Indexing PCR and cleanup
 
