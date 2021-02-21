@@ -157,7 +157,7 @@ This protocol assumes that you have:
     |------------|-------|---------------|-------|-------------|
     | Taq buffer | X     | 10            | 3     | 1           |
     | dATP       | mM    | 10            | 0.6   | 0.2         |
-    | Taq        | U     | 5             | 3     | 0.5         |
+    | Taq        | U     | 5             | 3     | 0.125       |
     | MgCl2      | mM    | 50            | 1.5   | 2.5         |
     | Water      | NA    | NA            | 1.9   | NA          |
     | **Total**  | NA    | NA            | **10**| NA          |
