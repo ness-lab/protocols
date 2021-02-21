@@ -40,6 +40,10 @@ linkcolor: blue
 
 | Reagent | Supplier | Catalog # | Cost (CAD) | Cost/reaction |
 |---------|----------|-----------|------------|---------------|
+| Bioruptor tubes | Diagenode | C30010011 | 263.26 | 0.53 |
+| PCR Tubes | VWR | 93001-118 | 86.10 | 2.87 |
+| Pipette tips 200 uL| TR-222-C-L | Corning | 41.54 | 1.66 |
+| Pipetter tips 10 uL | T-300-L | Corning | 38.75 | 0.77 |
 | dNTP | Fisher | Fermentas R1121 | 265 | 0.04 |
 | ATP | Fisher | Fermentas R0441 | 52.25 | 0.07 |
 | Tango buffer | Fisher | Fermentas BY5 | 14.3 | 0.01 |
