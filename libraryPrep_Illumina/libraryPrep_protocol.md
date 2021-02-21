@@ -101,6 +101,7 @@ This protocol assumes that you have:
     * For our samples we used 3 cycles of 15 seconds ON, 30 seconds OFF on a Bioruptor Pico
     * _Note:_ We sheared DNA using a Bioruptor Pico, but any acoustic shearing device would likely be fine (e.g., Covaris).
     * _Note:_ It's a good idea to perform a few different rounds of shearing with different settings and running these on a gel and/or Bioanalyzer make sure you're getting the correct fragment size distribution.
+3. After shearing, move 25 &#956;L of DNA to empty PCR tube and proceed to post-shearing cleanup.
 
 ### Post-shearing cleanup {#sec:3.1.2}
 
