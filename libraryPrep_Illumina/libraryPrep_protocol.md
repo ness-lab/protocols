@@ -95,9 +95,10 @@ This protocol assumes that you have:
 
 ### Shearing
 
-1. Normalize DNA to 10 ng/&#956;L (quantified by Qubit) in 25 &#956;L of low-TE (10 mM Tris-HCl ph8 and 0.1 mM EDTA). You can shear more than 25 &#956;L if you want multiple shots at the library prep per smaple.
+1. Normalize DNA to 10 ng/&#956;L (quantified by Qubit) in 25 &#956;L of low-TE (10 mM Tris-HCl ph8 and 0.1 mM EDTA) in Bioruptor tubes. You can shear more than 25 &#956;L if you want multiple shots at the library prep per smaple.
     * _Note:_ We've had success using lower concentrations if DNA quantity is an issue
 2. Shear DNA by sonication to mean fragment size of \~500 bp.
+    * For our samples we used 3 cycles of 15 seconds ON, 30 seconds OFF on a Bioruptor Pico
     * _Note:_ We sheared DNA using a Bioruptor Pico, but any acoustic shearing device would likely be fine (e.g., Covaris).
     * _Note:_ It's a good idea to perform a few different rounds of shearing with different settings and running these on a gel and/or Bioanalyzer make sure you're getting the correct fragment size distribution.
 
