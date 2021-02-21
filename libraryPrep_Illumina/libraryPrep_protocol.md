@@ -226,20 +226,27 @@ This protocol assumes that you have:
 
 ### 2nd indexing PCR and pooling (optional)
 
-Because only 10 &#956;L of the pre-PCR (i.e., ligated) library is used in the indexing PCR, each library prep allows for a total of two PCR reactions. If you find that final library concentrations (i.e., after cleaning, see [@sec:3.5.3]) are too low, you can perform a second PCR reaction on the remain pre-PCR library using the same conditions as above. These two reaction can then be pooled prior to cleaning, and then eluted in a lower volume to increase concentrations (see [@sec:3.5.3] below).
+Because only 10 &#956;L of the pre-PCR (i.e., ligated) library is used in the indexing PCR, each library prep allows for a total of two PCR reactions. If you find that final library concentrations (i.e., after cleaning, see [@sec:3.5.3]) are too low, you can perform a second PCR reaction on the remaining pre-PCR library using the same conditions as above. These two reaction can then be pooled prior to cleaning, and then eluted in a lower volume to increase concentrations (see [@sec:3.5.3] below).
 
 ### Post PCR cleanup {#sec:3.5.3}
 
-1. Add 0.8X the post-PCR DNA volume in SPRI bead solution to each sampled. If you only performed a single PCR reaction, this should be approximately 20 &#956;L. If you pooled two 25 &#956;L PCR reactions, this should be approximately 40 &#956;L of SPRI bead solution. This should remvove primer dimers and other small fragments remaining from PCR.
+1. Add 1X the post-PCR DNA volume in SPRI bead solution to each sample. If you only performed a single PCR reaction, this should be approximately 25 &#956;L. If you pooled two 25 &#956;L PCR reactions, this should be approximately 50 &#956;L of SPRI bead solution. This should remvove primer dimers and other small fragments remaining from PCR.
 2. Perform bead cleanup as in [@sec:3.1.2], eluting in 23 &#956;L (i.e., 20 &#956;L for sequencing and 3 &#956;L for post-cleaning QC)
 3. QC library by visualizing on a gel using the 50 bp Fermentas ladder or by passing through an Agilent Bioanalyzer with a DNA 1000 high sensitivity chip.
 
 ## Pooling for sequencing
 
-For multiplexed sequencing, dual-indexed libraries need to be pooled into equimolar ratio pools to ensure approximately equal sequencing coverage. [
+For multiplexed sequencing, dual-indexed libraries need to be pooled into equimolar ratio pools to ensure approximately equal sequencing coverage. This is done in two steps: (1) Creating equimolar dilutions for each sample, and (2) Creating an equimolar pool for all samples to be multiplexed on a single lane. 
 
-1. [This script](https://github.com/ness-lab/illumina-pooling) can facilitate determining the library volumes required to create equimolar pools for sequencing.
-2. Pipette the required volume of each cleaned, dual-indexed library into the appropriate tube. You should have 1 tube for each sequencing lane.
+### Creating equimolar dilutions
+
+1. Create equimolar dilutions for each sample, diluting the concentration down to that of the least concentrated sample. For highly concentrated samples, serial dilution may be required. The script in step 1 will output the volume required for each library, in addition to the volume of low-TE required to create the equimolar pool. It will additionally indicate whether serial dilutions are necessary and any required volumes. 
+    * _Note:_ [This script](https://github.com/ness-lab/illumina-pooling) can facilitate determining the library volumes required to create equimolar pools for sequencing.
+
+### Creating equimolar pool
+
+1. Pipette the same volume from each sample (which are now normalized to the same concentration from the step above) into the appropriate tube. You should have 1 tube for each sequencing lane.
+    * _Note:_ To avoid pipetting error associated with using very small volumes, it's best to ensure that at least 2 &#956;L is being taken from each sample when creating the equimolar pool. 
 
 ## Testing the libraries
 
