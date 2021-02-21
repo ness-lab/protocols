@@ -109,9 +109,9 @@ This protocol assumes that you have:
 2. Incubate at room temperature for 5 minutes.
 3. Place samples on magnetic rack and allow the beads to bind to the side of the tube. The supernatant should be clear.
 4. Remove and discard the supernatant (the DNA is bound to the beads so won't be lost).
-5. Add 80 &#956;L of freshly prepared 80% ethanol. Let sit on magnetic rack for 30 to 60 seconds and discard ethanol.
+5. Add 80 &#956;L of freshly prepared 80% ethanol. Let sit on magnetic rack for 30 to 60 seconds and discard ethanol using a pipette.
 6. Perform another ethanol wash as in step 5.
-7. Remove any residual ethanol with a pipette tip. Let samples sit uncovered at room temperature for 5 to 10 minutes or until all ethanol has evaporated.
+7. Remove any residual ethanol using a 10 &#956;L a pipette. Let samples sit uncovered at room temperature for 5 to 10 minutes or until all ethanol has evaporated.
     * **Important:** Do not let beads dry out too much as this will reduce yield. Beads should be matte brown (not glossy). Dry beads with begin to crack.
 8. Elute DNA in 20 &#956;L low-TE (or dH<sup>2</sup>0). Pipette mix to homogenize beads and TE. The DNA will now be in solution.
 
