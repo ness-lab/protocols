@@ -248,6 +248,17 @@ For multiplexed sequencing, dual-indexed libraries need to be pooled into equimo
 1. Pipette the same volume from each sample (which are now normalized to the same concentration from the step above) into the appropriate tube. You should have 1 tube for each sequencing lane.
     * _Note:_ To avoid pipetting error associated with using very small volumes, it's best to ensure that at least 2 &#956;L is being taken from each sample when creating the equimolar pool. 
 
+## QC of final libraries
+
+Sequencing centers generally suggest that customers send any relevant library QC data along with their library shipments. We will perform these QC steps here. 
+
+1. Quantify the concentration of the final library pools to be sequenced using a Qubit. Quantify each lane separately.
+2. Visualize the library on a gel
+    * Use 50 bp Fermentas Gene Ruler
+    * Use a 1.5% agarose gel with 3 &#956;L of 1% Ethidium Bromide (EtBr) added to gel
+    * Run gel for 60 minutes at 100 V with 3 &#956;L EtBr added to buffer
+3. (optional) Visualize fragment size distribution using an Agilent Bioanalyzer with a DNA 1000 High Sensitivity chip
+
 ## Testing the libraries
 
 We tested the protocol above by shotgun sequencing two white clover (_Trifolium repens_) genomes to 35X coverage on a lane of HiSeq 4000. [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) reports for both sequencing libraries are available [HERE](./fastqc_reports/). While the reports show some warnings, these can be largely eliminated by the adapter trimming performed using [bbduk](https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbduk-guide/). The adapter contamination occured because we sheared DNA to a mean size of 300 bp, resulting adapter read-though of some smaller fragments during sequencing. We now recommend shaering to 500bp to minimize this. Nonetheless, few reads were lost and all remaining reads were high quality.
