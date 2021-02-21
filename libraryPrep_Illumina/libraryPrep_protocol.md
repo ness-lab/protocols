@@ -36,13 +36,13 @@ linkcolor: blue
 
 ## Reagents
 
-**Table 1:** Reagents used during library prep, including supplier and catalog numbers. All costs are approximate and don't include lab consumables (e.g., tubes, tips, plates, etc.).
+**Table 1:** Reagents and consumables used during library prep, including supplier and catalog numbers. All costs are approximate.
 
 | Reagent | Supplier | Catalog # | Cost (CAD) | Cost/reaction |
 |---------|----------|-----------|------------|---------------|
 | Bioruptor tubes | Diagenode | C30010011 | 263.26 | 0.53 |
 | PCR Tubes | VWR | 93001-118 | 86.10 | 2.87 |
-| Pipette tips 200 uL| TR-222-C-L | Corning | 41.54 | 1.66 |
+| Pipette tips 200 uL| TR-222-C-L | Corning | 41.54 | 0.83 |
 | Pipetter tips 10 uL | T-300-L | Corning | 38.75 | 0.77 |
 | dNTP | Fisher | Fermentas R1121 | 265 | 0.04 |
 | ATP | Fisher | Fermentas R0441 | 52.25 | 0.07 |
@@ -65,7 +65,7 @@ linkcolor: blue
 | ITru5_Group1_8-Indices | IDT | NA | 198.64 | 0.59 |
 | ITru7_Group1_12-Indices | IDT | NA | 255.56 | 0.82 |
 | Phusion HiFi polymerase | NEB | M0530S | 116.19 | 0.29 |
-| **Total** | NA | NA | NA | **3.63** |
+| **Total** | NA | NA | NA | **8.60** |
 
 ## Lab equipment
 
