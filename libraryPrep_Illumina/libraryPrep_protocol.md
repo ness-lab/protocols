@@ -49,7 +49,7 @@ linkcolor: blue
 
 | Reagent | Supplier | Catalog # | Cost (CAD) | Cost/reaction |
 |---------|----------|-----------|------------|---------------|
-| Bioruptor tubes | Diagenode | C30010011 | 263.26 | 0.53 |
+| Bioruptor tubes | Diagenode | C30010020 | 527.33 | 0.53 |
 | PCR Tubes | VWR | 93001-118 | 86.10 | 2.87 |
 | Pipette tips 200 uL| TR-222-C-L | Corning | 41.54 | 0.83 |
 | Pipetter tips 10 uL | T-300-L | Corning | 38.75 | 0.77 |
@@ -106,9 +106,11 @@ This protocol assumes that you have:
 
 1. Normalize DNA to 10 ng/&#956;L (quantified by Qubit) in 25 &#956;L of low-TE (10 mM Tris-HCl ph8 and 0.1 mM EDTA) in Bioruptor tubes. You can shear more than 25 &#956;L if you want multiple shots at the library prep per smaple.
     * _Note:_ We've had success using lower concentrations if DNA quantity is an issue
+    * __Note for Inder:__ gDNA is stored in the -80 freezer in DV2014A. DNA is already normalized in 0.2 mL microtubes for Bioruptor Pico
 2. Shear DNA by sonication to mean fragment size of \~500 bp.
     * For our samples we used 3 cycles of 15 seconds ON, 30 seconds OFF on a Bioruptor Pico
     * _Note:_ We sheared DNA using a Bioruptor Pico, but any acoustic shearing device would likely be fine (e.g., Covaris).
+        * __Note for Inder:__ Bioruptor Pico is in the Rhea lab, straight through the Ness lab, on the left bench before the fume hood.
     * _Note:_ It's a good idea to perform a few different rounds of shearing with different settings and running these on a gel and/or Bioanalyzer make sure you're getting the correct fragment size distribution.
 3. After shearing, move 25 &#956;L of DNA to empty PCR tube and proceed to post-shearing cleanup.
 
@@ -226,6 +228,7 @@ This protocol assumes that you have:
 4. Add 1.25 &#956;L of forward primer and 1.25 &#956;L of reverse primer to each sample.
     * _Note:_ Each sample should receive a unique combination of forward and reverse primers since these will incorporate the indices into the libraries. 8 forward + 12 reverse primers can uniquely tag 96 individuals.
 5. Perform PCR using the following conditions. See @Glenn2019 for details on these primers.
+    * __Note for Inder:__ PCR protocols are in the machine under the James/Beata folder and are numbered in order of execution
     * 98 &#176;C for 30 seconds
     * 8 to 14 cycles of:
         * 98 &#176;C for 30 seconds
@@ -236,12 +239,14 @@ This protocol assumes that you have:
 ### 2nd indexing PCR and pooling (optional)
 
 Because only 10 &#956;L of the pre-PCR (i.e., ligated) library is used in the indexing PCR, each library prep allows for a total of two PCR reactions. If you find that final library concentrations (i.e., after cleaning, see [@sec:3.5.3]) are too low, you can perform a second PCR reaction on the remaining pre-PCR library using the same conditions as above. These two reaction can then be pooled prior to cleaning, and then eluted in a lower volume to increase concentrations (see [@sec:3.5.3] below).
+    * __Note for Inder:__ We're aiming for around 0.8 ng/&#956;L of cleaned-post-PCR library
 
 ### Post PCR cleanup {#sec:3.5.3}
 
 1. Add 1X the post-PCR DNA volume in SPRI bead solution to each sample. If you only performed a single PCR reaction, this should be approximately 25 &#956;L. If you pooled two 25 &#956;L PCR reactions, this should be approximately 50 &#956;L of SPRI bead solution. This should remvove primer dimers and other small fragments remaining from PCR.
 2. Perform bead cleanup as in [@sec:3.1.2], eluting in 23 &#956;L (i.e., 20 &#956;L for sequencing and 3 &#956;L for post-cleaning QC)
 3. QC library by visualizing on a gel using the 50 bp Fermentas ladder or by passing through an Agilent Bioanalyzer with a DNA 1000 high sensitivity chip.
+    * __Note for Inder:__ We haven't been doing the gels or bioanalyzer traces for all libraries
 
 ## Pooling for sequencing
 
