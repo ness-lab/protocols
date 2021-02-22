@@ -134,7 +134,7 @@ This protocol assumes that you have:
 
 1. Prepare the end-repair master mix below shown in table 2. Each reaction requires 10 &#956;L. It's a good idea to prepare more than you'll need (e.g., enough for 9 samples if you're preparing 8 libraries)
 
-    **Table 2:** End-repair master mix from @Meyer2010. All volumes in &#956;L
+    **Table 2:** End-repair master mix from @Meyer2010. All volumes in &#956;L. Final concentrations calculated from total sample volume (i.e., master mix + samplei = 30 &#956;L)
 
     | Reagent      | Units | Initial conc. | Vol.   | Final conc. |
     |--------------|-------|---------------|--------|-------------|
@@ -162,15 +162,15 @@ This protocol assumes that you have:
 
 1. Prepare the A-tailing master mix shown in table 3. Each sample requires 10 &#956;L.
 
-    **Table 3:** See @Kobs1997 and [this wiki from the Rausher lab at Duke](https://wiki.duke.edu/display/rausherlab/A-tailing+of+PCR+products) for details on A-tailing. All volumes in &#956;L
+    **Table 3:** See @Kobs1997 and [this wiki from the Rausher lab at Duke](https://wiki.duke.edu/display/rausherlab/A-tailing+of+PCR+products) for details on A-tailing. All volumes in &#956;L. Final concentrations calculated from total sample volume (i.e., master mix + sample = 30 &#956;L)
 
     | Reagent    | Units | Initial conc. | Vol.  | Final conc. |
     |------------|-------|---------------|-------|-------------|
     | Taq buffer | X     | 10            | 3     | 1           |
     | dATP       | mM    | 10            | 0.6   | 0.2         |
-    | Taq        | U     | 5             | 3     | 0.125       |
+    | Taq        | U     | 5             | 0.75  | 0.125       |
     | MgCl2      | mM    | 50            | 1.5   | 2.5         |
-    | Water      | NA    | NA            | 1.9   | NA          |
+    | Water      | NA    | NA            | 4.15  | NA          |
     | **Total**  | NA    | NA            | **10**| NA          |
 
 2. Add 10 &#956;L of master mix to 20 &#956;L each DNA sample.
@@ -187,7 +187,7 @@ This protocol assumes that you have:
 
 1. Prepare the adapter ligation master mix shown in table 4. Each sample requires 10 &#956;L.
 
-    **Table 4:** Adapter ligation master mix from @Meyer2010. All volumes in &#956;L
+    **Table 4:** Adapter ligation master mix from @Meyer2010. All volumes in &#956;L. Final concentrations calculated from total sample volume (i.e., master mix + adapters + sample = 35 &#956;L)
 
     | Reagent       | Units | Initial conc. | Vol.  | Final conc. |
     |---------------|-------|---------------|-------|-------------|
@@ -213,7 +213,7 @@ This protocol assumes that you have:
 
 1. Prepare the PCR master mix shown in table 5. Each reaction requires 12.5 &#956;L.
 
-    **Table 5:** [PCR master mix](https://international.neb.com/Protocols/0001/01/01/pcr-protocol-m0530). All volumes in &#956;L
+    **Table 5:** [PCR master mix](https://international.neb.com/Protocols/0001/01/01/pcr-protocol-m0530). All volumes in &#956;L. Final concentrations calculated from total sample volume (i.e., master mix + primers + sample = 25 &#956;L)
 
     | Reagent            | Units | Initial conc.| Vol.     | Final conc. |
     |--------------------|-------|--------------|----------|-------------|
