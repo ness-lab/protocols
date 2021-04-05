@@ -11,7 +11,12 @@ linkcolor: blue
 
 # Version history
 
-#### v1.2.0 (Latest)
+#### v1.2.1 (Latest)
+
+- Minor typo fixes
+- Fixed heading references
+
+#### v1.2.0
 
 - Added consumables to supplies and updated costs
 - Updated DNA shearing conditions and added transfer step post-cleanup
@@ -85,18 +90,18 @@ linkcolor: blue
 5. PCR plates or tubes
 6. 10 and 100 &#956;L multichannel or singlechannel pipettes
 
-## Before starting {#sec:2.3}
+## Before starting {#sec-2.3}
 
 This protocol is used for preparing dual-indexed, Illumina-compatible gDNA libraries for whole genome sequencing. It doesn't rely on any commercial kits; rather, the protocol uses home-made master mixes for all reactions to minimize costs. References will be provided throughout to credit the original publications.
 
-Briefly, this protocol uses an "on-bead" library preparation (@Fisher2011) with "home-brewed" master mixes (@Kobs1997; @Meyer2010; @Fisher2011) and SPRI beads (@Rohland2012), and incorporates i5 and i7 Ilummina indices into adapters through PCR (@Glenn2019).
+Briefly, this protocol uses an "on-bead" library preparation [@Fisher2011] with "home-brewed" master mixes (@Kobs1997; @Meyer2010; @Fisher2011) and SPRI beads (@Rohland2012), and incorporates i5 and i7 Ilummina indices into adapters through PCR (@Glenn2019).
 
 This protocol assumes that you have:
 
 1. Hydrated all of index-containing forward and reverse PCR primers (described in supplementary file: _Protocol for preparing 1.25 nmol iTru primer aliquots for use during library preparation_ in @Glenn2019). These are diluted to 5 &#956;M.
 2. Annealed the adapter stubs (i.e., iTrusR2-stubRCp, iTrusR1-stub) to form the Y-yoke adapter (supplementary file:_Protocol for preparing double-stranded iTru adapters for use during library preparation_ in @Glenn2019). These are diluted to 5 &#956;M. This is referred to as the _adaptor mix_ throughout the protocol_
-3. Prepared the SPRI bead solution, which replaces Ampure XP beads for cleaning enzymatic reations (@Rohland2012; reproduced in supplementary file:_Protocol for preparing an inexpensive substitute for AMPure_ in @Glenn2019). Be sure to also prepare a PEG solution lacking the actual SPRI beads (described in the same file, which will be used throughout the protocol.
-4. Prepared a fresh aliquot of 80% ethanol. Addition of 0.05% Tween-20 to this PEG/NaCl solution will greatly facilitate the bead washed
+3. Prepared the SPRI bead solution, which replaces Ampure XP beads for cleaning enzymatic reations (@Rohland2012; reproduced in supplementary file:_Protocol for preparing an inexpensive substitute for AMPure_ in @Glenn2019). Be sure to also prepare a PEG solution lacking the actual SPRI beads (described in the same file, which will be used throughout the protocol. Addition of 0.05% Tween-20 to this PEG/NaCl solution will greatly facilitate the bead washed
+4. Prepared a fresh aliquot of 80% ethanol.
 
 # Protocol
 
@@ -106,15 +111,13 @@ This protocol assumes that you have:
 
 1. Normalize DNA to 10 ng/&#956;L (quantified by Qubit) in 25 &#956;L of low-TE (10 mM Tris-HCl ph8 and 0.1 mM EDTA) in Bioruptor tubes. You can shear more than 25 &#956;L if you want multiple shots at the library prep per smaple.
     * _Note:_ We've had success using lower concentrations if DNA quantity is an issue
-    * __Note for Inder:__ gDNA is stored in the -80 freezer in DV2014A. DNA is already normalized in 0.2 mL microtubes for Bioruptor Pico
 2. Shear DNA by sonication to mean fragment size of \~500 bp.
     * For our samples we used 3 cycles of 15 seconds ON, 30 seconds OFF on a Bioruptor Pico
     * _Note:_ We sheared DNA using a Bioruptor Pico, but any acoustic shearing device would likely be fine (e.g., Covaris).
-        * __Note for Inder:__ Bioruptor Pico is in the Rhea lab, straight through the Ness lab, on the left bench before the fume hood.
     * _Note:_ It's a good idea to perform a few different rounds of shearing with different settings and running these on a gel and/or Bioanalyzer make sure you're getting the correct fragment size distribution.
 3. After shearing, move 25 &#956;L of DNA to empty PCR tube and proceed to post-shearing cleanup.
 
-### Post-shearing cleanup {#sec:3.1.2}
+### Post-shearing cleanup {#sec-3.1.2}
 
 1. Add 20 &#956;L of SPRI bead solution to each sample. This is a 0.8X Bead:DNA ratio, which is meant to remove fragment < \~250 base pairs.
 2. Incubate at room temperature for 5 minutes.
@@ -146,14 +149,14 @@ This protocol assumes that you have:
     | Water        | NA    | NA            | 1.6    | NA          |
     | **Total**    | NA    | NA            | **10** | NA          |
 
-2. Pipette 10 &#956;L of master mix in to 25 &#956;L of each DNA sample. Mix throughly by pipetting or flicking.
+2. Pipette 10 &#956;L of master mix in to 20 &#956;L of each DNA sample. Mix throughly by pipetting or flicking.
 3. Incubate reation in thermocycler using the following conditions (from Fisher _et al._ 2011):
     * 15 mins at 12°C followed by 15 mins at 25°C (30 mins total).
 
 ### Post end-repair cleanup
 
 1. Add 84 &#956;L of 20% PEG-8000/2.5M NaCl (i.e. SPRI bead solution without the beads) to samples. This is a 2.8X Bead:DNA ratio (@Fisher2011).
-2. Perform bead cleanup as in [@sec:3.1.2], eluting DNA in 20 &#956;L of low-TE.
+2. Perform bead cleanup as in [3.1.2](#sec-3.1.2), eluting DNA in 20 &#956;L of low-TE.
 
 
 ## A-tailing and cleanup
@@ -179,7 +182,7 @@ This protocol assumes that you have:
 ### Post A-tailing cleanup
 
 1. Add 66 &#956;L of 20% PEG-8000/2.5M NaCl (i.e. SPRI bead solution without the beads) to samples. This is a 2.2X Bead:DNA ratio (@Fisher2011).
-2. Perform bead cleanup as in [@sec:3.1.2], eluting DNA in 20 &#956;L of low-TE.
+2. Perform bead cleanup as in [3.1.2](#sec-3.1.2), eluting DNA in 20 &#956;L of low-TE.
 
 ## Adapter ligation and cleanup
 
@@ -197,14 +200,14 @@ This protocol assumes that you have:
     | Water         | NA    | NA            | 2.12  | NA          |
     | **Total**     | NA    | NA            | **10**| NA          |
 
-2. Add 5 &#956;L of 5 &#956;M adapter mix (see point 2 in [@sec:2.3]) to each DNA sample.
+2. Add 5 &#956;L of 5 &#956;M adapter mix (see point 2 in [Before starting](#sec-2.3)) to each DNA sample.
 3. Add 10 &#956;L of master mix to each sample. Pipette mix thoroughly. The total volume should now be 35 &#956;L.
 4. Incubate in thermocycler for 30 minutes at 25°C
 
 ### Post-adapter ligation cleanup
 
 1. Add 31.5 &#956;L of 20% PEG/2.5M NaCl (i.e. speedbeads without the beads) to samples. This is a 0.9X bead:DNA ratio. This will get rid of smaller DNA fragments (e.g., < \~250 bp) like adapter dimers that may have formed during the ligation reaction.
-2. Perform bead cleanup as in [@sec:3.1.2], eluting DNA in 20 &#956;L of low-TE.
+2. Perform bead cleanup as in [3.1.2](#sec-3.1.2), eluting DNA in 20 &#956;L of low-TE.
 3. After elution, place beads on magnet and carefully transfer the supernatant to new tube/plate by slowly drawing up the supernatant with a pipette. The DNA is in the supernatant. This will be used for indexing PCR.
 
 ## Indexing PCR and cleanup
@@ -228,7 +231,6 @@ This protocol assumes that you have:
 4. Add 1.25 &#956;L of forward primer and 1.25 &#956;L of reverse primer to each sample.
     * _Note:_ Each sample should receive a unique combination of forward and reverse primers since these will incorporate the indices into the libraries. 8 forward + 12 reverse primers can uniquely tag 96 individuals.
 5. Perform PCR using the following conditions. See @Glenn2019 for details on these primers.
-    * __Note for Inder:__ PCR protocols are in the machine under the James/Beata folder and are numbered in order of execution
     * 98 &#176;C for 30 seconds
     * 8 to 14 cycles of:
         * 98 &#176;C for 30 seconds
@@ -238,15 +240,13 @@ This protocol assumes that you have:
 
 ### 2nd indexing PCR and pooling (optional)
 
-Because only 10 &#956;L of the pre-PCR (i.e., ligated) library is used in the indexing PCR, each library prep allows for a total of two PCR reactions. If you find that final library concentrations (i.e., after cleaning, see [@sec:3.5.3]) are too low, you can perform a second PCR reaction on the remaining pre-PCR library using the same conditions as above. These two reaction can then be pooled prior to cleaning, and then eluted in a lower volume to increase concentrations (see [@sec:3.5.3] below).
-    * __Note for Inder:__ We're aiming for around 0.8 ng/&#956;L of cleaned-post-PCR library
+Because only 10 &#956;L of the pre-PCR (i.e., ligated) library is used in the indexing PCR, each library prep allows for a total of two PCR reactions. If you find that final library concentrations (i.e., after cleaning, see [Post PCR cleanup](#sec-3.5.3) are too low, you can perform a second PCR reaction on the remaining pre-PCR library using the same conditions as above. These two reaction can then be pooled prior to cleaning, and then eluted in a lower volume to increase concentrations (see [Post PCR cleanup](#sec-3.5.3) below).
 
-### Post PCR cleanup {#sec:3.5.3}
+### Post PCR cleanup {#sec-3.5.3}
 
 1. Add 1X the post-PCR DNA volume in SPRI bead solution to each sample. If you only performed a single PCR reaction, this should be approximately 25 &#956;L. If you pooled two 25 &#956;L PCR reactions, this should be approximately 50 &#956;L of SPRI bead solution. This should remvove primer dimers and other small fragments remaining from PCR.
-2. Perform bead cleanup as in [@sec:3.1.2], eluting in 23 &#956;L (i.e., 20 &#956;L for sequencing and 3 &#956;L for post-cleaning QC)
+2. Perform bead cleanup as in [3.1.2](#sec-3.1.2), eluting in 23 &#956;L (i.e., 20 &#956;L for sequencing and 3 &#956;L for post-cleaning QC)
 3. QC library by visualizing on a gel using the 50 bp Fermentas ladder or by passing through an Agilent Bioanalyzer with a DNA 1000 high sensitivity chip.
-    * __Note for Inder:__ We haven't been doing the gels or bioanalyzer traces for all libraries
 
 ## Pooling for sequencing
 
